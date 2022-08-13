@@ -1,10 +1,76 @@
----
-title: 管理後臺首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>管理後臺首頁</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--↑載入google字體-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--↑載入Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <div class="wrap d-flex">
+      <div class="sidebar">
+        <h1 class="logo">
+          <a href="index.html">LOGO</a>
+        </h1>
+        <ul class="menu mb-0 p-0">
+          <li class="d-flex align-items-center align-items-center">
+            <i class="large material-icons">insert_chart</i>
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="material-icons icon">forum</i>
+            <a href="#">Question</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="material-icons icon">assignment</i>
+            <a href="#">Assignment</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="material-icons icon">video_library</i>
+            <a href="#">Course</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="material-icons icon">supervisor_account</i>
+            <a href="admin.html">Admin</a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="material-icons icon">settings</i>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+        <div class="user d-flex">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
+            alt=""
+          />
+          <div class="user-info d-flex flex-column justify-content-between">
+            <h4 class="fw-bold">Andy Chen</h4>
+            <p class="mb-0">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+
+      
 <div class="d-flex flex-column">
   <div class="navbar">
     <div class="d-flex align-items-center">
@@ -238,3 +304,10 @@ current: index
     </div>
   </div>
 </div>
+
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
