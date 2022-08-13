@@ -1,0 +1,45 @@
+// Modal #editAdmin
+.editAdmin,
+.addNewAdmin {
+  .modal-header {
+    padding: 32px;
+  }
+  .vd-info {
+    padding: 0;
+    margin: 0 0 18px 0;
+    li {
+      list-style: none;
+      .verification-icon {
+        color: $icon-primary;
+      }
+      .deactivate-icon {
+        color: $icon-secondary;
+      }
+      .deactivate-danger {
+        color: $icon-secondary;
+      }
+    }
+  }
+}
+
+// Modal #viewModalCenter
+.profileContent {
+  .profileImg {
+    @include size(141px, 141px);
+  }
+  .profileInfo-content,
+  .profileTool {
+    width: 260px;
+  }
+}
+.profileInfo-list {
+  .tag,
+  .name {
+    margin-bottom: 8px;
+  }
+  .email {
+    h6 {
+      color: $text-secondary;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.card-header {
+  background-color: $bg-primary;
+  .card-header-text {
+    h6 {
+      margin-bottom: 4px;
+    }
+  }
+  .card-header-icon {
+    a {
+      color: $text-primary;
+      &:hover {
+        color: $icon-primary;
+      }
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.card-body {
+  padding: 16px 32px 0 16px;
+  .card-title-text {
+    h6 {
+      margin-top: 4px;
+      color: $text-secondary;
+    }
+  }
+  .card-body-info {
+    margin-right: 8px;
+    img {
+      @include size(40px, 40px);
+      image-rendering: -webkit-optimize-contrast;
+      border-radius: 50%;
+    }
+  }
+  .card-body-content {
+    border-bottom: 1px solid $border-primary;
+    .card-title-icon {
+      a {
+        color: $text-primary;
+        &:hover {
+          color: $icon-primary;
+        }
+        &:first-child {
+          margin-right: 24px;
+        }
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+    .card-text {
+      padding: 16px 0;
+      .important {
+        background-color: $bg-primary;
+        color: $text-success;
+        padding: 0 4px;
+      }
+    }
+    .annexBox {
+      width: 176px;
+      border: 1px solid $border-primary;
+      background-color: $bg-muted;
+      border-radius: 2px;
+      padding: 8px 12px;
+      margin-bottom: 16px;
+      a {
+        color: $text-primary;
+        i {
+          vertical-align: middle;
+        }
+        &:hover {
+          color: $hover-primary;
+        }
+      }
+    }
+  }
+}

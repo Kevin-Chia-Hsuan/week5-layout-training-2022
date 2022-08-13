@@ -1,0 +1,11 @@
+.contentBox {
+  .table {
+    a {
+      color: $text-primary;
+      &:hover {
+        color: $text-success;
+      }
+      margin-left: 25px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.pagination {
+  margin-top: 60px;
+  li {
+    a {
+      color: $text-primary;
+      border-color: $border-success;
+      &:hover {
+        color: $text-light;
+        background-color: $bg-success;
+      }
+    }
+  }
+}

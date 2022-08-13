@@ -1,0 +1,240 @@
+---
+title: 管理後臺首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="d-flex flex-column">
+  <div class="navbar">
+    <div class="d-flex align-items-center">
+      <h2 class="fw-bold">Assignment</h2>
+      <div class="dropdown">
+        <a
+          class="btn dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          AllCourses
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">CSS</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">JavaScript</a></li>
+        </ul>
+        <i class="material-icons angle-down">keyboard_arrow_down</i>
+      </div>
+    </div>
+    <ul class="icon-list d-flex">
+      <li>
+        <a href="#"><i class="material-icons icon">search</i></a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons icon">notifications_active</i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="contentBox d-flex justify-content-between">
+    <div class="directoryBox">
+      <div class="dropdown">
+        <a
+          class="btn dropdown-toggle fw-bold"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          All (4)
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">CSS</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">JavaScript</a></li>
+        </ul>
+        <i class="material-icons angle-down">keyboard_arrow_down</i>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="item-top d-flex justify-content-between">
+            <h6 class="text-end">Chapter Assignment 2</h6>
+            <p class="m-0 text-end">4 hrs ago</p>
+          </div>
+          <div
+            class="
+              item-bottom
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h4 class="text-end fw-bold">Please check this file…</h4>
+            <p class="m-0 text-end">Emily Wang</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="item-top d-flex justify-content-between">
+            <h6 class="text-end">Chapter Assignment 1</h6>
+            <p class="m-0 text-end">12 hrs ago</p>
+          </div>
+          <div
+            class="
+              item-bottom
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h4 class="text-end fw-bold">My Homework</h4>
+            <p class="m-0 text-end">David Xu</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="item-top d-flex justify-content-between">
+            <h6 class="text-end">Final Assignment</h6>
+            <p class="m-0 text-end">18 hrs ago</p>
+          </div>
+          <div
+            class="
+              item-bottom
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h4 class="text-end fw-bold">Have a problem with this…</h4>
+            <p class="m-0 text-end">Tony Wei</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="item-top d-flex justify-content-between">
+            <h6 class="text-end">Final Assignment</h6>
+            <p class="m-0">19 hrs ago</p>
+          </div>
+          <div
+            class="
+              item-bottom
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <h4 class="text-end fw-bold">Did I do it right?</h4>
+            <p class="m-0 text-end">Christina Lin</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="messageBox">
+      <h6 class="comment text-end">2 comments</h6>
+      <div class="card">
+        <div
+          class="card-header d-flex justify-content-between align-items-center"
+        >
+          <div class="card-header-text">
+            <h6>Chapter Assignment 2 / HTML&CSS</h6>
+            <h4 class="fw-bold">Please check this file for me, thanks!</h4>
+          </div>
+          <div class="card-header-icon">
+            <a href="#">
+              <i class="material-icons icon">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="card-body d-flex">
+          <div class="card-body-info">
+            <img src="./assets/images/emilywang.jpeg" alt="" />
+          </div>
+          <div class="card-body-content">
+            <div class="card-title">
+              <div class="card-title-text">
+                <h4 class="fw-bold">Emily Wang</h4>
+                <h6>10:38 AM (4 hours ago)</h6>
+              </div>
+            </div>
+            <div class="card-text">
+              <p>
+                Hi Teacher, the attached file is my homework of chapter 2. And
+                here comes a question: Why in the following code the height of
+                the
+                <span class="important">div</span> is bigger than the height of
+                the <span class="important">img</span> ? There is a gap below
+                the image, but it doesn’t seems to be a padding/margin.
+                <br />What is the gap or extra space below image?
+              </p>
+            </div>
+            <div class="annexBox fw-bold">
+              <a href="#" download="">
+                <i class="material-icons icon">attach_file</i>
+                <span>HW-2-David.zip</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex">
+          <div class="card-body-info">
+            <img src="./assets/images/andychen.jpeg" alt="" />
+          </div>
+          <div class="card-body-content border-0">
+            <div
+              class="
+                card-title
+                d-flex
+                align-items-center
+                justify-content-between
+              "
+            >
+              <div class="card-title-text">
+                <h4 class="fw-bold">Andy Chen (You)</h4>
+                <h6>13:24 AM (1 hours ago)</h6>
+              </div>
+              <div class="card-title-icon d-flex">
+                <a href="#">
+                  <i class="material-icons icon">star_border</i>
+                </a>
+                <a href="#">
+                  <i class="material-icons icon">edit</i>
+                </a>
+              </div>
+            </div>
+            <div class="card-text">
+              <p>
+                Hi David, by default, an image is rendered inline, like a letter
+                so it sits on the same line that a, b, c and d sit on. There is
+                space below that line for the descenders you find on letters
+                like g, j, p and q. <br /><br />
+                You can: <br /><br />　• adjust the
+                <span class="important">vertical-align</span> of the image to
+                position it elsewhere (e.g. the
+                <span class="important">middle</span> ) or <br />　• change the
+                <span class="important">display</span> so it isn’t inline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 左右按鈕及回覆按鍵 -->
+      <div
+        class="messageTool d-flex align-items-center justify-content-between"
+      >
+        <div class="arrowBox d-flex">
+          <a href="#">
+            <i class="material-icons icon">chevron_left</i>
+          </a>
+          <a href="#">
+            <i class="material-icons icon">chevron_right</i>
+          </a>
+        </div>
+        <div class="btnBox d-flex">
+          <button type="button" class="btn btn-outline-success">
+            Mark as read
+          </button>
+          <button type="button" class="btn btn-success">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
